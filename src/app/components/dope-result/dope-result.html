@@ -1,0 +1,18 @@
+<div class="frame md-whiteframe-11dp"
+  ng-style="{
+    background: vm.color
+  }">
+  <iframe ng-src="{{vm.trust(vm.result.url)}}"></iframe>
+  <div class="_mask"></div>
+  <md-button
+    aria-label="Open {{::vm.result.title}} in new tab"
+    ng-href="{{::vm.result.editUrl}}"
+    target="_blank"
+    ng-style="{
+      color: vm.color
+    }"
+    class="dope-search-overlay-button"></md-button>
+  <div class="info">
+    <h2>{{::vm.result.title}} <i class="material-icons">launch</i></h2>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+main {
+  display: block;
+}
+
+.header {
+  padding: 80px 20px 20px;
+
+  .md-button {
+    font-weight: 600;
+
+    i {
+      vertical-align: middle;
+      margin: -2px 2px 0;
+      font-size: 20px;
+    }
+  }
+
+  small {
+    line-height: 50px;
+    padding: 0 20px;
+    color: #868585;
+    font-size: 14px;
+    -webkit-font-smoothing: auto;
+  }
+}
+
+.header logo {
+  display: block;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  em {
+    font-style: normal;
+    color: #f1dd40;
+  }
+
+  img {
+    display: inline-block;
+    max-height: 35px;
+    margin-top: 1px;
+    vertical-align: top;
+  }
+}
+
+main dope-queries {
+  max-width: 80%;
+  margin: 0 auto;
+
+  div {
+    margin-right: 20px;
+  }
+}

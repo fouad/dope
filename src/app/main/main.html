@@ -1,0 +1,38 @@
+<div layout="vertical" layout-fill>
+
+  <md-content>
+    <header class="header" layout="row">
+      <logo ui-sref="main({q: 'fireflies'})"></logo>
+      <small>We google, so you don't have to.</small>
+      <span flex></span>
+      <md-button class="md-primary" ui-sref="explore">
+        <i class="material-icons">explore</i>
+        Explore
+      </md-button>
+    </header>
+
+    <section class="dope-search-container">
+      <dope-search query="vm.query" results="vm.results"></dope-search>
+    </section>
+
+    <section class="dope-search-results" layout="row" layout-wrap>
+      <div
+        flex="100"
+        class="dope-search--empty">
+        <dope-queries layout="row"></dope-queries>
+      </div>
+
+      <div flex="100" layout="row" layout-align="center start">
+        <md-progress-circular ng-if="vm.loading" md-mode="indeterminate"></md-progress-circular>
+      </div>
+
+      <dope-result
+        ng-if="!vm.loading"
+        flex="50"
+        ng-repeat="result in vm.results"
+        result="result"></dope-result>
+    </section>
+
+    <credits></credits>
+  </md-content>
+</div>
