@@ -1,13 +1,17 @@
 <div layout="vertical" layout-fill>
 
   <md-content>
-    <header class="header" layout="row">
-      <logo ui-sref="main({q: 'fireflies'})"></logo>
-      <small>We google, so you don't have to.</small>
+    <header class="header" layout="row" layout-wrap>
+      <logo ui-sref="main({q: 'fireflies'})" flex-sm="100"></logo>
+      <small flex-sm="100">We google, so you don't have to.</small>
       <span flex></span>
-      <md-button class="md-primary" ui-sref="explore">
+      <md-button flex-sm="100" class="md-primary" ui-sref="explore">
         <i class="material-icons">explore</i>
         Explore
+      </md-button>
+      <md-button flex-sm="100" class="md-primary" href="https://github.com/fouad/dope" target="_blank">
+        <i class="material-icons">code</i>
+        Contribute
       </md-button>
     </header>
 
@@ -19,7 +23,7 @@
       <div
         flex="100"
         class="dope-search--empty">
-        <dope-queries layout="row"></dope-queries>
+        <dope-queries layout="row" layout-sm="column"></dope-queries>
       </div>
 
       <div flex="100" layout="row" layout-align="center start">
@@ -29,6 +33,7 @@
       <dope-result
         ng-if="!vm.loading"
         flex="50"
+        flex-sm="100"
         ng-repeat="result in vm.results"
         result="result"></dope-result>
     </section>

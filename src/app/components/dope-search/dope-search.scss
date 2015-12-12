@@ -11,11 +11,15 @@ dope-search {
     border-radius: 4px;
     outline: none;
     box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.25);
     transition: box-shadow .2s ease-out;
+    -webkit-transition: -webkit-box-shadow .2s ease-out;
+    box-sizing: border-box;
 
     &[disabled] {
       opacity: .65;
       box-shadow: 0 2px 8px rgba(0,0,0,.15);
+      -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.15);
     }
 
     &:hover {
@@ -24,6 +28,7 @@ dope-search {
 
     &:focus {
       box-shadow: 0 5px 16px rgba(0,0,0,.35);
+      -webkit-box-shadow: 0 5px 16px rgba(0,0,0,.35);
     }
   }
 }
@@ -41,5 +46,14 @@ dope-search {
 
   dope-queries div {
     margin: 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  dope-search {
+    padding: 0;
+    margin: 10px 0 20px;
+    border: 2px solid #e8e8e8;
+    border-radius: 4px;
   }
 }

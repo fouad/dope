@@ -1,5 +1,6 @@
 export * from '../components/logo'
 export * from '../components/credits'
+export * from '../components/dope-header'
 export * from '../components/dope-queries'
 export * from '../components/dope-search'
 export * from '../components/dope-store'

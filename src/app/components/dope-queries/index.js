@@ -22,6 +22,12 @@ import { Component } from 'ng-classy'
         font-size: 20px;
         transform: rotateZ(90deg);
       }
+
+      @media (max-width: 599px) {
+        dope-queries div {
+          text-align: center;
+        }
+      }
     </style>
     <div
       ng-repeat="result in vm.results"

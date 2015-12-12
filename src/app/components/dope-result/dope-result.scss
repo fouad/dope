@@ -19,6 +19,15 @@ dope-result {
   }
 }
 
+@media (max-width: 599px) {
+  dope-result {
+    &:nth-of-type(odd),
+    &:nth-of-type(even) {
+      padding: 10px;
+    }
+  }
+}
+
 dope-result .frame {
   display: block;
   position: relative;

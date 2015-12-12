@@ -2,10 +2,18 @@ main {
   display: block;
 }
 
+@media (min-width: 599px) {
+  .header .md-button {
+    height: 25px;
+    margin-top: 10px;
+  }
+}
+
 .header {
   padding: 80px 20px 20px;
 
   .md-button {
+    margin: 0;
     font-weight: 600;
 
     i {
@@ -52,5 +60,11 @@ main dope-queries {
 
   div {
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  main dope-queries {
+    margin-bottom: 30px;
   }
 }
