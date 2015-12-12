@@ -1,3 +1,0 @@
-# Dope JS
-
-More to come soon...
